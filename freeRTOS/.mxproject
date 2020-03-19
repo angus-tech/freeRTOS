@@ -1,7 +1,7 @@
 [PreviousGenFiles]
-HeaderPath=D:/Doc_Study/01_stm32/01_code/freeRTOS/freeRTOS/Inc
+HeaderPath=D:/Doc_Study/01_stm32/01_code/freeRTOS/opensource/freeRTOS/Inc
 HeaderFiles=FreeRTOSConfig.h;stm32f1xx_it.h;stm32f1xx_hal_conf.h;main.h;
-SourcePath=D:/Doc_Study/01_stm32/01_code/freeRTOS/freeRTOS/Src
+SourcePath=D:/Doc_Study/01_stm32/01_code/freeRTOS/opensource/freeRTOS/Src
 SourceFiles=freertos.c;stm32f1xx_it.c;stm32f1xx_hal_msp.c;main.c;
 
 [PreviousLibFiles]
