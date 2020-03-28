@@ -5,7 +5,7 @@
 #break main
 
 #target remote 220.191.3.231:2331
-#target remote localhost:2331
+target remote 192.168.1.2:2331
 
 monitor halt
 monitor interface SWD
