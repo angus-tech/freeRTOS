@@ -55,7 +55,25 @@ static void MX_GPIO_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+void delay_us(unsigned int time)
+{    
+   unsigned int i=0;  
+   while(time--)
+   {
+      i=10; 
+      while(i--) ;    
+   }
+}
 
+void delay_ms(unsigned int time)
+{    
+   unsigned int i=0;  
+   while(time--)
+   {
+      i=12000;  
+      while(i--) ;    
+   }
+}
 /* USER CODE END 0 */
 
 /**
@@ -98,7 +116,14 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-
+    HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_SET);
+    delay_ms(50000);
+    delay_ms(50000);
+    delay_ms(50000);
+    HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_RESET);
+    delay_ms(50000);
+    delay_ms(50000);
+    delay_ms(50000);
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
